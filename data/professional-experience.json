@@ -1,0 +1,24 @@
+   "prof-exp": [
+       {
+           "id":1,
+           "date-start":"Jan 2016",
+           "date-end":"Oct 2016",
+           "title":"Interim Director",
+           "company":"Center for Teahing and Learning"
+       },
+       {
+           "id":2,
+           "date-start":"Feb 2015",
+           "date-end":"Jul 2015",
+           "title":"Interim Director",
+           "company":"Center for Teahing and Learning"
+       },
+       {
+           "id":3,
+           "date-start":"May 2011",
+           "date-end":"Jul 2014",
+           "title":"Manager",
+           "company":"Center for Teahing and Learning"
+       },
+   ]
+}

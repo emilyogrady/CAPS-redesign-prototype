@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta>
+    <link type="text/css" rel="stylesheet"
+ href="http://bootswatch.com/paper/bootstrap.css" />
+ <style>
+     .form.faded .loader {
+         opacity: 0;
+     }
+     .form {
+         transition: all 0.5s linear;
+     }
+     .form > * {
+         opacity:1;
+         transition: all 0.5s linear;
+     }
+     .form .loader {
+         transition: all 0.1s linear;
+         opacity: 0;
+     }
+     .form.faded > * {
+         opacity:0;
+     }
+     .form.faded .loader {
+         opacity: 1;
+     }
+    </style>
+    </head>
+<body>
+    <div class="content">
+
+    </div>
+    <div class="form well">
+        <img class="loader" src="images/loader.gif" />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $.get("templates/record-of-actions.tpl.html", roa_handler); 
+            $.get("templates/professional-exp.tpl.html", pe_handler); 
+            $.get("templates/courses.tpl.html", c_handler); 
+            
+            
+            
+            $(".content").on("click", function(e){
+                console.log(e.target);
+                var $target = $(e.target);
+                if ($target.hasClass("form-loader")) {
+                    e.preventDefault();
+                // ^ the above is calling the html thing that was clicked and triggered this event...by wrapping it in the selector we convert it to a jquery object
+                    form_loader($target.attr("href"));   
+                }
+            });
+        });
+        
+        function roa_handler(tpl_html) {
+            var template = Handlebars.compile(tpl_html);
+            $.getJSON("data/record-of-actions.json", function(json_data){
+                var result = template(json_data);
+                  $(".content").append(result);
+            });
+        };
+        
+        function pe_handler(tpl_html) {
+            var template = Handlebars.compile(tpl_html);
+            $.getJSON("data/professional-exp.json", function(json_data){
+                var result = template(json_data);
+                  $(".content").append(result);
+            });
+        };
+        
+        function c_handler(tpl_html) {
+            var template = Handlebars.compile(tpl_html);
+            $.getJSON("data/courses.json", function(json_data){
+                var result = template(json_data);
+                  $(".content").append(result);
+            });
+        };
+        
+        function form_handler(tpl_html, status, xhr) {
+            console.log("Handler called");
+            console.log(xhr);
+            var template = Handlebars.compile(tpl_html);
+            $.getJSON("data/record-of-actions.json", function(json_data){
+                var result = template(json_data);
+                  $(".form").append(result);
+                setTimeout(function(){
+                    $(".form").removeClass("faded");
+                }, 200);
+            });
+        };
+        
+        function form_loader(_url) {
+            $(".form").addClass("faded");
+                setTimeout(function(){
+                    $(".form > *:not(.loader)").remove();
+                    $.get(_url, form_handler); 
+                }, 500);
+        }
+    </script>
+</body>
+</html>

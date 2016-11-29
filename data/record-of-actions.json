@@ -1,0 +1,28 @@
+{
+   "appointment": {
+       "date":"Aug 5, 2014",
+       "title":"Assistant Professor of Interactive Design"
+   },
+   "promotions": [
+       {
+           "id":1,
+           "date":"2022-08-05",
+           "title":"Associate Professor"
+       },
+       {
+           "id":2,
+           "date":"2029-08-05",
+           "title":"Professor"
+       },
+       {
+           "id":3,
+           "date":"2039-08-05",
+           "title":"Senior Professor"
+       },
+       {
+           "id":4,
+           "date":"2049-08-05",
+           "title":"Distinguished Professor"
+       }
+   ]
+}

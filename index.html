@@ -1,230 +1,207 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>CAPS Cedarville Academic Portfolio System</title>
-        <meta charset="utf-8" />
-        <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-        <link type="text/css" rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <header><h1>CAPS Portfolio System</h1></header>
-        <nav class="col-sm-3">
-            <ul class="list-unstyled">
-                <li><a href="#">Personal Data</a></li>
-                <li><a href="#">Personal Info</a></li>
-                <li>
-                    <a href="#record-of-actions">Record of Actions</a>
-                    <a href="#"><img src="#" /></a>    
-               </li>
-                    <ul class="sub-nav hide">
-                        <li><a href="#">Initial Appointment</a></li>
-                        <li><a href="#">Promotions/Tenure</a></li>
-                    </ul>
-                <li><a href="#">Educational Background</a></li>
-                <li><a href="#">Professional Credentials</a></li>
-                <li><a href="#prof-exp">Prior Prof Experience</a></li>
-                <li><a href="#">Teaching</a></li>
-                <li><a href="#courses-taught">Courses Taught</a></li>
-                <li><a href="#">Ind Study Supervised</a></li>
-                <li><a href="#">Special Assignments</a></li>
-                <li><a href="#">Scholarship</a></li>
-                <li>
-                   <a href="#">Scholarly Work</a>
-                   <a href="#"><img src="#" /></a>
-               </li>
-                    <ul class="sub-nav hide">
-                        <li><a href="#">Jounrals</a></li>
-                        <li><a href="#">Refereed Conference Papers</a></li>
-                        <li><a href="#">Books</a></li>
-                        <li><a href="#">Otehr Professional Publications</a></li>
-                        <li><a href="#">Presentations</a></li>
-                        <li><a href="#">Creative Works</a></li>
-                        <li><a href="#">Other Scholarly Activities</a></li>
-                    </ul>
-                <li><a href="#">Research Guides</a></li>
-                <li><a href="#">Publications Read</a></li>
-                <li><a href="#">Prof Development Activities</a></li>
-                <li><a href="#">Prof Development Goals</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Department Service</a></li>
-                <li><a href="#">University/Campus Service</a></li>
-                <li><a href="#">Church Activities and Christian Ministries</a></li>
-                <li><a href="#">Professional Service</a></li>
-                <li><a href="#">Missions Involvement</a></li>
-                <li><a href="#">Civic/Community Service</a></li>
-                <li><a href="#">Special Recognition/Awards</a></li>
-                <li><a href="#">Integration Paper</a></li>
-                <li><a href="#">Support Letters</a></li>
-                <li><a href="#">Internal to the University</a></li>
-                <li><a href="#">External to the University</a></li>
-                <li><a href="#">Informal Student Feedback</a></li>
-            </ul>
-        </nav>
-        <div class="col-sm-9">
-            <h2>Personal Data</h2>
-            <div class="panel">
-              <header id="prof-exp">
-                <h3>Prior Professional Experience</h3>
-                <div class="panel-controls">
-                    <a class="add-btn" href="#">Add  <img src="images/add-btn.png" alt="Add +"/></a>
-                </div>
-            </header>
-            <ul class="series list-unstyled">
-                <li class="professional-experience">
-                    <p class="date-range">
-                        <span class="date-start">{{prof-exp.date-start}}</span> &ndash;
-                        <span class="date-end"> {{prof-exp.date-end}}</span>
-                    </p>
-                    <p class="position">
-                        <span class="position-title">Interim Director</span>
-                        <span class="position-company">Center for Teahing and Learning</span>
-                    </p>
-                    <p>
-                        <a href="#"><img class="move-btn" src="images/move-btn.png" /></a>
-                        <a href="#"><img class="delete-btn" src="images/delete-btn.png" /></a>
-                        <a href="#"><img class="edit-btn" src="images/pencil.png" /></a>
-                    </p>
-                </li>
-                <li class="professional-experience">
-                    <p class="date-range">
-                        <span class="date-start">Feb 2015</span> &ndash;
-                        <span class="date-end"> Jul 2015</span>
-                    </p>
-                    <p class="position">
-                        <span class="position-title">Interim Director</span>
-                        <span class="position-company">Center for Teahing and Learning</span>
-                    </p>
-                    <p>
-                        <a href="#"><img class="move-btn" src="images/move-btn.png" /></a>
-                        <a href="#"><img class="delete-btn" src="images/delete-btn.png" /></a>
-                        <a href="#"><img class="edit-btn" src="images/pencil.png" /></a>
-                    </p>
-                </li>
-                <li class="professional-experience">
-                    <p class="date-range">
-                        <span class="date-start">May 2011</span> &ndash;
-                        <span class="date-end"> Jul 2014</span>
-                    </p>
-                    <p class="position">
-                        <span class="position-title">Manager</span>
-                        <span class="position-company">Center for Teahing and Learning</span>
-                    </p>
-                    <p>
-                        <a href="#"><img class="move-btn" src="images/move-btn.png" /></a>
-                        <a href="#"><img class="delete-btn" src="images/delete-btn.png" /></a>
-                        <a href="#"><img class="edit-btn" src="images/pencil.png" /></a>
-                    </p>
-                </li>
-            </ul>  
+<head>
+    <title>CAPS Cedarville Academic Portfolio System</title>
+    <meta charset="utf-8"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header><h1>CAPS Portfolio System</h1></header>
+<nav class="col-sm-3">
+    <ul class="list-unstyled">
+        <li><a href="#">Personal Data</a></li>
+        <li><a href="#">Personal Info</a></li>
+        <li>
+            <a href="#record-of-actions">Record of Actions</a>
+            <a href="#"><img src="#"/></a>
+        </li>
+        <ul class="sub-nav hide">
+            <li><a href="#">Initial Appointment</a></li>
+            <li><a href="#">Promotions/Tenure</a></li>
+        </ul>
+        <li><a href="#">Educational Background</a></li>
+        <li><a href="#">Professional Credentials</a></li>
+        <li><a href="#prof-exp">Prior Prof Experience</a></li>
+        <li><a href="#">Teaching</a></li>
+        <li><a href="#courses-taught">Courses Taught</a></li>
+        <li><a href="#">Ind Study Supervised</a></li>
+        <li><a href="#">Special Assignments</a></li>
+        <li><a href="#">Scholarship</a></li>
+        <li>
+            <a href="#">Scholarly Work</a>
+            <a href="#"><img src="#"/></a>
+        </li>
+        <ul class="sub-nav hide">
+            <li><a href="#">Jounrals</a></li>
+            <li><a href="#">Refereed Conference Papers</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Otehr Professional Publications</a></li>
+            <li><a href="#">Presentations</a></li>
+            <li><a href="#">Creative Works</a></li>
+            <li><a href="#">Other Scholarly Activities</a></li>
+        </ul>
+        <li><a href="#">Research Guides</a></li>
+        <li><a href="#">Publications Read</a></li>
+        <li><a href="#">Prof Development Activities</a></li>
+        <li><a href="#">Prof Development Goals</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Department Service</a></li>
+        <li><a href="#">University/Campus Service</a></li>
+        <li><a href="#">Church Activities and Christian Ministries</a></li>
+        <li><a href="#">Professional Service</a></li>
+        <li><a href="#">Missions Involvement</a></li>
+        <li><a href="#">Civic/Community Service</a></li>
+        <li><a href="#">Special Recognition/Awards</a></li>
+        <li><a href="#">Integration Paper</a></li>
+        <li><a href="#">Support Letters</a></li>
+        <li><a href="#">Internal to the University</a></li>
+        <li><a href="#">External to the University</a></li>
+        <li><a href="#">Informal Student Feedback</a></li>
+    </ul>
+</nav>
+<div class="col-sm-9">
+    <h2>Personal Data</h2>
+    <div class="panel">
+        <header id="prof-exp">
+            <h3>Prior Professional Experience</h3>
+            <div class="panel-controls">
+                <a class="add-btn" href="#">Add <img src="images/add-btn.png" alt="Add +"/></a>
             </div>
-            <div class="panel">
-                <header id="record-of-actions">
-                    <h3>Record of Actions</h3>
-                    <div class="panel-controls">
-                        <a class="add-btn" href="#">Add  <img src="images/add-btn.png" alt="Add +"/></a>
-                    </div>
-                </header>
-                <h4>Initial Appointment</h4>
-                <ul class="series list-unstyled">
-                    <li class="record-of-actions">
-                        <p class="date-range">
-                            <span class="date">August 20, 2007</span>
-                        </p>
-                        <p class="position">
-                            <span class="position-title">Adjunct Professor</span>
-                        </p>
-                        <p>
-                            <a href="#"><img class="move-btn" src="images/move-btn.png" /></a>
-                            <a href="#"><img class="delete-btn" src="images/delete-btn.png" /></a>
-                            <a href="#"><img class="edit-btn" src="images/pencil.png" /></a>
-                        </p>
-                    </li>
-                </ul>
-                <h4>Promotions</h4>
-                <ul class="series list-unstyled">
-                    <li class="record-of-actions">
-                        <p class="date-range">
-                            <span class="date">2017</span>
-                        </p>
-                        <p class="position">
-                            <span class="position-title">Assistant Professor</span>
-                        </p>
-                        <p>
-                            <a href="#"><img class="move-btn" src="images/move-btn.png" /></a>
-                            <a href="#"><img class="delete-btn" src="images/delete-btn.png" /></a>
-                            <a href="#"><img class="edit-btn" src="images/pencil.png" /></a>
-                        </p>
-                    </li>
-                    <li class="record-of-actions">
-                        <p class="date-range">
-                            <span class="date">2020</span>
-                        </p>
-                        <p class="position">
-                            <span class="position-title">Associate Professor</span>
-                        </p>
-                        <p>
-                           <a href="#"><img class="move-btn" src="images/move-btn.png" /></a>
-                            <a href="#"><img class="delete-btn" src="images/delete-btn.png" /></a>
-                            <a href="#"><img class="edit-btn" src="images/pencil.png" /></a>
-                        </p>
-                    </li>
-                </ul>
+        </header>
+        <ul class="series list-unstyled">
+            {{#prior-prof-exps}}
+            <li class="professional-experience">
+                <p class="date-range">
+                    <span class="date-start">{{date-start}}</span> &ndash;
+                    <span class="date-end">{{date-end}}</span>
+                </p>
+                <p class="position">
+                    <span class="position-title">{{title}}</span>
+                    <span class="position-company">{{company}}</span>
+                </p>
+                <p>
+                    <a href="#" class="app-action-btn" data-action="move-prior-prof-exp" data-id="{{id}}">
+                        <img class="move-btn" src="images/move-btn.png"/>
+                    </a>
+                    <a href="#" class="app-action-btn" data-action="delete-prior-prof-exp" data-id="{{id}}">
+                        <img class="delete-btn" src="images/delete-btn.png"/>
+                    </a>
+                    <a href="#" class="app-action-btn" data-action="edit-prior-prof-exp" data-id="{{id}}">
+                        <img class="edit-btn" src="images/pencil.png"/>
+                    </a>
+                </p>
+            </li>
+            {{/prior-prof-exps}}
+        </ul>
+    </div>
+    <div class="panel">
+        <header id="record-of-actions">
+            <h3>Record of Actions</h3>
+            <div class="panel-controls">
+                <a class="add-btn" href="#">Add <img src="images/add-btn.png" alt="Add +"/></a>
             </div>
-            <h2>Teaching</h2>
-            <div class="panel">
-               <header id="courses-taught">
-                    <h3>Courses Taught</h3>
-                    <div class="panel-controls">
-                        <a class="add-btn" href="#">Add  <img src="images/add-btn.png" alt="Add +"/></a>
-                    </div>
-                </header>
-                   <div class="course">
-                       <div class="course-header">
-                           <h4>VCD 2700</h4>
-                           <a class="add-btn-inner" href="#"><img src="images/add-btn-inner.png" alt="Add +"/></a>
-                           <a class="arrow-downr" href="#"><img src="images/arrow-down.png" alt="Dropdown"/></a>
-                       </div>
-                        <table class="series list-unstyled">
-                           <h4>Syllabus</h4>
-                            <tr class="courses">
-                               <td class="download-btn">
-                                   <a href="#"><img src="#" /></a>
-                               </td>
-                                <td class="syllabus-doc">
-                                    <span class="doc-download"><a href="#">VCD-Spring2017.pdf</a></span><span class="doc-term">Spring 2017</span>
-                                </td>
-                                <td class="syllabs-desc">
-                                    <span class="description">This is a long description of this syllabus. It has many words and will make this cell in this table particularly long. Watch as I continue to make this decription long by placing more information into it. Man, this is a long description.</span>
-                                </td>
-                            </tr>
-                            <tr class="courses">
-                               <td class="download-btn">
-                                   <a href="#"><img src="#" /></a>
-                               </td>
-                                <td class="syllabus-doc">
-                                    <span class="doc-download"><a href="#">VCD-Spring2017.pdf</a></span><span class="doc-term">Spring 2017</span>
-                                </td>
-                                <td class="syllabs-desc">
-                                    <span class="description">This is a long description of this syllabus. It has many words and will make this cell in this table particularly long. Watch as I continue to make this decription long by placing more information into it. Man, this is a long description.</span>
-                                </td>
-                            </tr>
-                        </table>
-                </div>
+        </header>
+        <h4>Initial Appointment</h4>
+        <ul class="series list-unstyled">
+            <li class="record-of-actions">
+                <p class="date-range">
+                    <span class="date">{{initial-appt.date}}</span>
+                </p>
+                <p class="position">
+                    <span class="position-title">{{initial-appt.title}}</span>
+                </p>
+                <p>
+                    <a href="#"class="app-action-btn" data-action="edit-intial-appt"><img class="edit-btn" src="images/pencil.png"/></a>
+                </p>
+            </li>
+        </ul>
+        <h4>Promotions</h4>
+        <ul class="series list-unstyled">
+            <li class="record-of-actions">
+                <p class="date-range">
+                    <span class="date">2017</span>
+                </p>
+                <p class="position">
+                    <span class="position-title">Assistant Professor</span>
+                </p>
+                <p>
+                    <a href="#"><img class="move-btn" src="images/move-btn.png"/></a>
+                    <a href="#"><img class="delete-btn" src="images/delete-btn.png"/></a>
+                    <a href="#"><img class="edit-btn" src="images/pencil.png"/></a>
+                </p>
+            </li>
+            <li class="record-of-actions">
+                <p class="date-range">
+                    <span class="date">2020</span>
+                </p>
+                <p class="position">
+                    <span class="position-title">Associate Professor</span>
+                </p>
+                <p>
+                    <a href="#"><img class="move-btn" src="images/move-btn.png"/></a>
+                    <a href="#"><img class="delete-btn" src="images/delete-btn.png"/></a>
+                    <a href="#"><img class="edit-btn" src="images/pencil.png"/></a>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <h2>Teaching</h2>
+    <div class="panel">
+        <header id="courses-taught">
+            <h3>Courses Taught</h3>
+            <div class="panel-controls">
+                <a class="add-btn" href="#">Add <img src="images/add-btn.png" alt="Add +"/></a>
             </div>
+        </header>
+        <div class="course">
+            <div class="course-header">
+                <h4>VCD 2700</h4>
+                <a class="add-btn-inner" href="#"><img src="images/add-btn-inner.png" alt="Add +"/></a>
+                <a class="arrow-downr" href="#"><img src="images/arrow-down.png" alt="Dropdown"/></a>
+            </div>
+            <table class="series list-unstyled">
+                <h4>Syllabus</h4>
+                <tr class="courses">
+                    <td class="download-btn">
+                        <a href="#"><img src="#"/></a>
+                    </td>
+                    <td class="syllabus-doc">
+                        <span class="doc-download"><a href="#">VCD-Spring2017.pdf</a></span><span class="doc-term">Spring 2017</span>
+                    </td>
+                    <td class="syllabs-desc">
+                        <span class="description">This is a long description of this syllabus. It has many words and will make this cell in this table particularly long. Watch as I continue to make this decription long by placing more information into it. Man, this is a long description.</span>
+                    </td>
+                </tr>
+                <tr class="courses">
+                    <td class="download-btn">
+                        <a href="#"><img src="#"/></a>
+                    </td>
+                    <td class="syllabus-doc">
+                        <span class="doc-download"><a href="#">VCD-Spring2017.pdf</a></span><span class="doc-term">Spring 2017</span>
+                    </td>
+                    <td class="syllabs-desc">
+                        <span class="description">This is a long description of this syllabus. It has many words and will make this cell in this table particularly long. Watch as I continue to make this decription long by placing more information into it. Man, this is a long description.</span>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
-        <script src="javascript.js"></script>
-        <script src="js/handlebars.js"></script>
-        <script>
-            $.get("templates/professional-experience.tpl.html", pe_handler); 
-            
-            function pe_handler(tpl_html) {
-            var template = Handlebars.compile(tpl_html);
-            $.getJSON("data/professional-exp.json", function(json_data){
-                var result = template(json_data);
-                  $(".panel").append(result);
-            });
-        };
-        </script>
-    </body>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="javascript.js"></script>
+<script src="js/handlebars.js"></script>
+<script>
+    $.get("templates/professional-experience.tpl.html", pe_handler);
+
+    function pe_handler(tpl_html) {
+        var template = Handlebars.compile(tpl_html);
+        $.getJSON("data/professional-exp.json", function (json_data) {
+            var result = template(json_data);
+            $(".panel").append(result);
+        });
+    }
+    ;
+</script>
+</body>
 </html>

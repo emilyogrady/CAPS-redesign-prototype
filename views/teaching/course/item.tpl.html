@@ -1,0 +1,10 @@
+<div class="course">
+       <div class="course-header">
+           <h4>{{code} {{name}}}</h4>
+           <a class="add-btn" href="#"><img src="assets/images/add-btn-inner.png" alt="Add +"/></a>
+           <a class="arrow-down" href="#"><img src="assets/images/arrow-down.png" alt="Dropdown"/></a>
+       </div>
+       {{#fileGroups}}
+            {{~~> file-group/item.tpl.html}}
+        {{/fileGroup}}
+</div>

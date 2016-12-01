@@ -92,6 +92,9 @@ nav ul li ul li {
     border: 1px solid #cbcbcb;
     box-sizing:border-box;
     position:relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 nav ul li ul li:first-child  {
     border-top-left-radius: 10px;

@@ -1,0 +1,96 @@
+{
+    "courses": [
+        {
+            "name": "Scripting for Interactivity",
+            "code": "VCD-2700",
+            "fileGroups": [
+                {
+                    "name": "Syllabi",
+                    "files": [
+                    {
+                        "filename": "2016a-p4 syllabus.pdf",
+                        "term": "Spring 2016",
+                        "description":"None provided.";
+                    },
+                    {
+                        "filename": "2015a-p4.pdf",
+                        "term": "Fall 2015",
+                        "description":"None provided.";
+                    },
+                    {
+                        "filename": "2016a-p4.pdf",
+                        "term": "Spring 2015",
+                        "description":"None provided.";
+                    },
+                ],
+                },
+                {
+                    "name": "Assignments",
+                    "files": [
+                        {
+                        "filename": "2016a-p4 syllabus.pdf",
+                        "term": "Spring 2016",
+                        "description":"None provided.";
+                    },
+                    {
+                        "filename": "2015a-p4.pdf",
+                        "term": "Fall 2015",
+                        "description":"None provided.";
+                    },
+                    {
+                        "filename": "2016a-p4.pdf",
+                        "term": "Spring 2015",
+                        "description":"None provided.";
+                    },
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "Web Design I",
+            "code": "VCD-2600",
+            "fileGroups": [
+                {
+                    "name": "Syllabi",
+                    "files": [
+                    {
+                        "filename": "2016a-p4 syllabus.pdf",
+                        "term": "Spring 2016",
+                        "description":"None provided.";
+                    },
+                    {
+                        "filename": "2015a-p4.pdf",
+                        "term": "Fall 2015",
+                        "description":"None provided.";
+                    },
+                    {
+                        "filename": "2016a-p4.pdf",
+                        "term": "Spring 2015",
+                        "description":"None provided.";
+                    },
+                ],
+                },
+                {
+                    "name": "Assignments",
+                    "files": [
+                        {
+                        "filename": "2016a-p4 syllabus.pdf",
+                        "term": "Spring 2016",
+                        "description":"None provided.";
+                    },
+                    {
+                        "filename": "2015a-p4.pdf",
+                        "term": "Fall 2015",
+                        "description":"None provided.";
+                    },
+                    {
+                        "filename": "2016a-p4.pdf",
+                        "term": "Spring 2015",
+                        "description":"None provided.";
+                    },
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+<h2>Teaching</h2>
+    <div class="panel">
+       <header id="courses-taught">
+            <h3>Courses Taught</h3>
+            <div class="panel-controls">
+                <a class="add-btn" href="#">Add  <img src="assets/images/add-btn.png" alt="Add +"/></a>
+            </div>
+        </header>
+          {{#courses}}
+              {{~~> course/item.tpl.html}}
+        {{/courses}}
+    </div>

@@ -2,8 +2,43 @@ body {
     font-size:62.5%;
     background-color:#cbcbcb;
 }
+.course .download-btn {
+    padding:10px;
+    padding-left:20px;
+}
+.course .syllabus-doc {
+    max-width:150px;
+    font-size:1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding:10px;
+}
+.course .syllabus-desc {
+    font-size:1.2em;
+    padding:10px;
+    padding-right:20px;
+}
+.course table {
+    width:100%;
+}
+.course table td {
+    vertical-align: top;
+}
 .course-header {
     box-shadow: 0px 2px 2px #888;
+    padding-bottom:5px;
+    position:relative;
+}
+.course-header .add-btn {
+    position:absolute;
+    top:2px;
+    right:45px;
+}
+.course-header .arrow-down {
+    position:absolute;
+    top:2px;
+    right:15px;
 }
 .course-header img {
     width:18px;
@@ -14,6 +49,9 @@ body {
 .date-range {
     float:left;
     width:25%;
+}
+.download-btn img {
+    width:20px;
 }
 h2 {
     font-size:3em;
@@ -31,20 +69,53 @@ h4 {
 nav {
     background-color:#557cf9;
 }
-nav li {
+nav ul li a {
+    box-sizing: border-box;
+    color:black;
+    width:100%;
+    display:block;
+    padding:5px;
+    padding-left:10px;
+}
+nav ul li a:hover {
+    background-color:#ddd;
+    text-decoration: none;
+}
+nav ul:first-child {
+    margin-top:10px;
+}
+nav ul li ul li {
     background-color:#f1f0f0;
     font-size:.8em;
     float:left;
+    width:100%;
     border: 1px solid #cbcbcb;
     box-sizing:border-box;
-    width:200px;
-    padding:5px;
+    position:relative;
 }
-nav li a {
-    box-sizing: border-box;
-    color:black;
-    width:300px;
-    padding:10px;
+nav ul li ul li:first-child  {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color:white;
+}
+nav ul li ul li:last-child  {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 20px;
+}
+nav ul li a:hover ul li:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+nav ul li a:hover ul li:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+nav ul li ul li img {
+    width:8px;
+    position:absolute;
+    top:7px;
+    right:8px;
 }
 p {
     font-size:1.4em;

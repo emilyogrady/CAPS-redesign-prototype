@@ -1,0 +1,66 @@
+{
+    "personalData": [
+            
+        {"personalInfo": {
+                "rank":"Adjunt Professor",
+               "name":"Phillip Schanely"   
+            }
+        },
+        {"prior-prof-exps": [
+               {
+                   "id":1,
+                   "date-start":"Jan 2016",
+                   "date-end":"Oct 2016",
+                   "title":"Interim Director",
+                   "company":"Center for Teahing and Learning"
+               },
+               {
+                   "id":2,
+                   "date-start":"Feb 2015",
+                   "date-end":"Jul 2015",
+                   "title":"Interim Director",
+                   "company":"Center for Teahing and Learning"
+               },
+               {
+                   "id":3,
+                   "date-start":"May 2011",
+                   "date-end":"Jul 2014",
+                   "title":"Manager",
+                   "company":"Center for Teahing and Learning"
+               },
+           ]
+        },
+        {"recordOfActions": [
+                   {"appointment": {
+                       "date":"Aug 5, 2014",
+                       "title":"Assistant Professor of Interactive Design"
+                        }
+                   },
+                    {"promotions": [
+                       {
+                           "id":1,
+                           "date":"2022-08-05",
+                           "title":"Associate Professor"
+                       },
+                       {
+                           "id":2,
+                           "date":"2029-08-05",
+                           "title":"Professor"
+                       },
+                       {
+                           "id":3,
+                           "date":"2039-08-05",
+                           "title":"Senior Professor"
+                       },
+                       {
+                           "id":4,
+                           "date":"2049-08-05",
+                           "title":"Distinguished Professor"
+                       }
+                   ]
+                }
+            ]
+        }        
+    ]
+}
+        

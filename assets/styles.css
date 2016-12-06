@@ -200,6 +200,12 @@ p {
 .panel li:hover .move-btn {
     display:block;
 }
+.panel p {
+    float:left;
+}
+.panel .rank {
+    width:25%;
+}
 .panel ul:hover li {
     box-sizing: border-box;
     border-top:2px dashed #e1e1e1;

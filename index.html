@@ -291,92 +291,27 @@
             </ul>
         </nav>
         <div class="col-sm-9">
-            <h2>Personal Data</h2>
+            {{~~> personal-data.tpl.html}}
+            {{~~> teaching.tpl.html}}
+            <h2>Support Leters</h2>
             <div class="panel">
-              <header id="prof-exp">
-                <h3>Prior Professional Experience</h3>
-                <div class="panel-controls">
-                    <a class="add-btn" href="#">Add  <img src="assets/images/add-btn.png" alt="Add +"/></a>
-                </div>
+               <header id="internal-uni">
+                    <h3>Internal to the Univeristy</h3>
                 </header>
-                <ul class="series list-unstyled">
-                   {{#prior-prof-exps}}
-                    <li class="professional-experience">
-                    <p class="date-range">
-                        <span class="date-start">{{date-start}}</span> &ndash; 
-                        <span class="date-end">{{date-end}}</span>
-                    </p>
-                    <p class="position">
-                        <span class="position-title">{{title}}</span>
-                        <span class="position-company">{{company}}</span>
-                    </p>
-                    <p>
-                        <a href="#" class="app-action-btn" data-action="move-prior-prof-exp" data-id="{{id}}">
-                            <img class="move-btn" src="assets/images/move-btn.png" />
-                        </a>
-                        <a href="#" class="app-action-btn" data-action="delete-prior-prof-exp" data-id="{{id}}">
-                            <img class="delete-btn" src="assets/images/delete-btn.png" />
-                        </a>
-                        <a href="#" class="app-action-btn" data-action="edit-prior-prof-exp" data-id="{{id}}">
-                            <img class="edit-btn" src="assets/images/pencil.png" />
-                        </a>
-                    </p>
-                </li>
-                {{/prior-prof-exps}}
-            </ul>  
-            </div>
-            <div class="panel">
-                <header id="record-of-actions">
-                    <h3>Record of Actions</h3>
-                    <div class="panel-controls">
-                        <a class="add-btn" href="#">Add  <img src="assets/images/add-btn.png" alt="Add +"/></a>
-                    </div>
-                </header>
-                <h4>Initial Appointment</h4>
-                <ul class="series list-unstyled">
-                    <li class="record-of-actions">
-                        <p class="date-range">
-                            <span class="date">{{initial-appt.date}}</span>
+                <ul class="series list-unstyled col-span-12">
+                    <li class="internal-uni">
+                        <p class="rank col-span-3">
+                            <span class="rank">{{personalInfo.rank}}</span>
                         </p>
-                        <p class="position">
-                            <span class="position-title">{{initial-appt.title}}</span>
+                        <p class="position col-span-6">
+                            <span class="position-title">{{personalInfo.name}}</span>
                         </p>
                         <p>
                             <a href="#" class="app-action-btn" data-action="edit-initial-appt"><img class="edit-btn" src="assets/images/pencil.png" /></a>
                         </p>
                     </li>
                 </ul>
-                <h4>Promotions</h4>
-                <ul class="series list-unstyled">
-                    <li class="record-of-actions">
-                        <p class="date-range">
-                            <span class="date">2017</span>
-                        </p>
-                        <p class="position">
-                            <span class="position-title">Assistant Professor</span>
-                        </p>
-                        <p>
-                            <a href="#"><img class="move-btn" src="assets/images/move-btn.png" /></a>
-                            <a href="#"><img class="delete-btn" src="assets/images/delete-btn.png" /></a>
-                            <a href="#"><img class="edit-btn" src="assets/images/pencil.png" /></a>
-                        </p>
-                    </li>
-                    <li class="record-of-actions">
-                        <p class="date-range">
-                            <span class="date">2020</span>
-                        </p>
-                        <p class="position">
-                            <span class="position-title">Associate Professor</span>
-                        </p>
-                        <p>
-                           <a href="#"><img class="move-btn" src="assets/images/move-btn.png" /></a>
-                            <a href="#"><img class="delete-btn" src="assets/images/delete-btn.png" /></a>
-                            <a href="#"><img class="edit-btn" src="assets/images/pencil.png" /></a>
-                        </p>
-                    </li>
-                </ul>
             </div>
-            {{~~> teaching.tpl.html}}
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
         <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>

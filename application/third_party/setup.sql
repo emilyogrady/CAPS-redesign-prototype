@@ -31,9 +31,7 @@ CREATE TABLE IF NOT EXISTS `Record_of_Action` (
   `person` INT(7) NOT NULL,
   `date` DATE NOT NULL,
   `rank` INT(2) NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Rank_idx` (`rank` ASC),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -48,8 +46,7 @@ CREATE TABLE IF NOT EXISTS `Professional_Experience` (
   `title` VARCHAR(64) NOT NULL,
   `company` VARCHAR(128) NOT NULL,
   `description` TEXT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -95,8 +92,7 @@ CREATE TABLE IF NOT EXISTS `Academic_Term` (
   `id` INT(3) NOT NULL AUTO_INCREMENT,
   `year` INT(4) NOT NULL,
   `semester` VARCHAR(3) NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Semester_idx` (`semester` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -111,11 +107,7 @@ CREATE TABLE IF NOT EXISTS `Course_File` (
   `url` VARCHAR(128) NOT NULL,
   `term` INT(3) NOT NULL,
   `description` TEXT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `File Type_idx` (`fileType` ASC),
-  INDEX `Person_idx` (`person` ASC),
-  INDEX `Course_idx` (`course` ASC),
-  INDEX `Term_idx` (`term` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -125,8 +117,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `Course_Taught` (
   `course` INT(4) NOT NULL,
   `person` INT(7) NOT NULL,
-  PRIMARY KEY (`course`, `person`),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`course`, `person`))
 ENGINE = InnoDB;
 
 
@@ -140,8 +131,7 @@ CREATE TABLE IF NOT EXISTS `Educational_Background` (
   `degree` VARCHAR(64) NOT NULL,
   `institution` VARCHAR(128) NOT NULL,
   `capstoneTitle` VARCHAR(128) NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -155,8 +145,7 @@ CREATE TABLE IF NOT EXISTS `Independent_Study` (
   `endDate` DATE NOT NULL,
   `organization` VARCHAR(128) NULL,
   `description` TEXT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -170,8 +159,7 @@ CREATE TABLE IF NOT EXISTS `Journal` (
   `date` DATE NOT NULL,
   `publication` VARCHAR(128) NOT NULL,
   `authors` TEXT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -185,8 +173,7 @@ CREATE TABLE IF NOT EXISTS `Conference_Paper` (
   `date` DATE NOT NULL,
   `conference` VARCHAR(128) NOT NULL,
   `authors` TEXT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -200,8 +187,7 @@ CREATE TABLE IF NOT EXISTS `Presentation` (
   `date` DATE NOT NULL,
   `event` VARCHAR(128) NOT NULL,
   `authors` TEXT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -215,8 +201,7 @@ CREATE TABLE IF NOT EXISTS `Book` (
   `date` DATE NOT NULL,
   `publisher` VARCHAR(128) NOT NULL,
   `authors` TEXT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -230,8 +215,7 @@ CREATE TABLE IF NOT EXISTS `Other_Publication` (
   `date` DATE NOT NULL,
   `event` VARCHAR(128) NOT NULL,
   `authors` TEXT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -246,8 +230,7 @@ CREATE TABLE IF NOT EXISTS `Creative_Work` (
   `source` VARCHAR(128) NOT NULL,
   `authors` TEXT NULL,
   `description` TEXT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -261,6 +244,5 @@ CREATE TABLE IF NOT EXISTS `Other_Scholarship` (
   `date` DATE NOT NULL,
   `event` VARCHAR(128) NOT NULL,
   `authors` TEXT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Person_idx` (`person` ASC))
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;

@@ -1,38 +1,37 @@
-<h2>Personal Data</h2>
-            <div class="panel">
-               <header id="personal-info">
-                    <h3>Personal Info</h3>
-                </header>
-                
-                {{#personalInfo}}
-                    {{--> personal-info/item.tpl.html}}
-                {{/personalInfo}}
-                
+<section id="personal">
+    <h2>Personal Data</h2>
+    <div class="panel">
+       <header id="personal-info">
+            <h3>Personal Info</h3>
+        </header>
+        {{#personalInfo}}
+            {{--> personal-info/item.tpl.html}}
+        {{/personalInfo}}
+    </div>
+    <div class="panel">
+      <header id="prof-exp">
+        <h3>Prior Professional Experience</h3>
+        <div class="panel-controls">
+            <a class="add-btn" href="#">Add
+                <img src="assets/images/add-btn.png" alt="Add +"/>
+            </a>
+        </div>
+        </header>
+        {{#prior-prof-exps}}
+            {{--> prof-exp/item.tpl.html}}
+        {{/prior-prof-exps}}
+    </div>
+    <div class="panel">
+        <header id="record-of-actions">
+            <h3>Record of Actions</h3>
+            <div class="panel-controls">
+                <a class="add-btn" href="#">Add
+                    <img src="assets/images/add-btn.png" alt="Add +"/>
+                </a>
             </div>
-            <div class="panel">
-              <header id="prof-exp">
-                <h3>Prior Professional Experience</h3>
-                <div class="panel-controls">
-                    <a class="add-btn" href="#">Add  <img src="assets/images/add-btn.png" alt="Add +"/></a>
-                </div>
-                </header>
-   
-                  
-                   {{#prior-prof-exps}}
-                        {{--> prof-exp/item.tpl.html}}
-                    {{/prior-prof-exps}}
-                     
-            </div>
-            <div class="panel">
-                <header id="record-of-actions">
-                    <h3>Record of Actions</h3>
-                    <div class="panel-controls">
-                        <a class="add-btn" href="#">Add  <img src="assets/images/add-btn.png" alt="Add +"/></a>
-                    </div>
-                </header>
-                
-                {{#roas}}
-                    {{~~> roa/item.tpl.html}}
-                {{/roas}}
-                
-            </div>
+        </header>
+        {{#roas}}
+            {{~~> roa/item.tpl.html}}
+        {{/roas}}
+    </div>
+</section>

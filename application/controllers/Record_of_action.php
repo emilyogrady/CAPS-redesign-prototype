@@ -7,7 +7,6 @@ class Record_of_action extends CI_Controller {
     {
         $this->db->where('person', $person_id);
         $result = cfr('Record_of_Action');
-//        $result = "Hello world.";
         $result_json = json_encode($result);
 
         echo $result_json;
